@@ -104,7 +104,7 @@ plt.axis([0,3712, 0, 3712])
 plt.figure(figsize=(3712.0/float(DPI), 3712.0/float(DPI)))
 ax = plt.axes(projection=ccrs.Geostationary(central_longitude=0.0,satellite_height=35785831))
 #plt.imshow(IR108, cmap="Greys")
-plt.imshow(np.dstack(BT_combined), interpolation="none", aspect="auto")
+plt.imshow(np.dstack(BT_combined), interpolation="none")
 
 ax.set_axis_off()
 
